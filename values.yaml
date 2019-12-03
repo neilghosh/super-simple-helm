@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: neilghosh/hello-spring
-  tag: latest
+  repository: neilghosh/super-simple-svc
+  tag: v1
 
 service:
   type: ClusterIP

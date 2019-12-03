@@ -14,6 +14,8 @@ creates a chart with a lot of option like ingress, load balancer and service acc
 helm lint ./supersimplechart
 ```
 
+### Note this needs https://github.com/neilghosh/simple-springboot-k8s to be available in dockerhub
+
 ### Install 
 ```
 helm install  ./supersimplechart --generate-name
