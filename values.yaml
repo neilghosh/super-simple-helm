@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  tag: 1.16.0
+  repository: neilghosh/hello-spring
+  tag: latest
 
 service:
   type: ClusterIP
