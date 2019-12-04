@@ -30,6 +30,18 @@ helm install super-simple-svc ./supersimplechart
 helm install super-simple-svc ./supersimplechart --set service.type=NodePort
 ```
 
+### access GKE
+```
+gcloud container clusters get-credentials super-simple-cluster --zone us-central1-a --project cloud-community-day
+kubectl get nodes --output wide 
+gcloud compute firewall-rules create test-node-port --allow tcp:[NODE_PORT]
+```
+
+### access minikube 
+```
+minikube ip
+```
+
 ### Install with custom image 
 
 ```
